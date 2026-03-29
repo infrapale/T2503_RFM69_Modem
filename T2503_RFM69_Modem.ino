@@ -164,7 +164,7 @@ uart_msg_st         *uart_p;
 void initialize_tasks(void)
 {
   atask_initialize();
-  atask_add_new(&debug_print_handle);
+  // atask_add_new(&debug_print_handle);
   atask_add_new(&clock_handle);
   atask_add_new(&rfm_receive_handle);
 
@@ -182,7 +182,7 @@ void setup()
     Serial.begin(9600);
     SerialX.begin(9600);
 
-    Serial.print("T2311_RFM69_Modem"); Serial.print(" Compiled: ");
+    Serial.print("T2503_RFM69_Modem"); Serial.print(" Compiled: ");
     Serial.print(__DATE__); Serial.print(" ");
     Serial.print(__TIME__); Serial.println();
 
